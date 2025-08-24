@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostra - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navigation bar">
+    <div class="nav container">
+      <a href="index.html" class="brand">Nostra</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <h2>Menu</h2>
+      <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">×</button>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </aside>
+  <div class="overlay" id="overlay" tabindex="-1" aria-hidden="true"></div>
+
+  <main class="container contact">
+    <h1 class="page-title">Contact Us</h1>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send</button>
+      <p id="contactStatus" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-box-1">
+        <h2 class="headingText">Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum
+          used since the 1500s is reprodused
+          below for those interest</p>
+      </div>
+    </div>
+    <p class="subtitle">@ 2023 Nostra.com</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostra - Collections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navigation bar">
+    <div class="nav container">
+      <a href="index.html" class="brand">Nostra</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="collections.html" aria-current="page">Collections</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <h2>Menu</h2>
+      <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">×</button>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="contact.html">Contact</a>
+  </aside>
+  <div class="overlay" id="overlay" tabindex="-1" aria-hidden="true"></div>
+
+  <main class="container">
+    <h1 class="page-title">Collections</h1>
+
+    <!-- Search + Filters -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products" />
+      <div class="filter-buttons" role="group" aria-label="Filter products">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="products-grid" id="productsGrid" aria-label="Products">
+      <article class="product-card" data-category="men" data-name="Classic Tee">
+        <div class="product-thumb" style="background-image: url('./images/classic-tee.jpeg');"></div>
+        <h3 class="product-title">Classic Tee</h3>
+        <p class="product-price">$25</p>
+      </article>
+
+      <article class="product-card" data-category="women" data-name="Summer Dress">
+        <div class="product-thumb" style="background-image: url('./images/summer-dress.jpg');"></div>
+        <h3 class="product-title">Summer Dress</h3>
+        <p class="product-price">$45</p>
+      </article>
+
+      <article class="product-card" data-category="accessories" data-name="Leather Belt">
+        <div class="product-thumb" style="background-image: url('images/leather-belt.jpg');"></div>
+        <h3 class="product-title">Leather Belt</h3>
+        <p class="product-price">$30</p>
+      </article>
+
+      <article class="product-card" data-category="men" data-name="Denim Jacket">
+        <div class="product-thumb" style="background-image: url('./images/denim-jacket.jpeg');"></div>
+        <h3 class="product-title">Denim Jacket</h3>
+        <p class="product-price">$70</p>
+      </article>
+
+      <article class="product-card" data-category="women" data-name="Yoga Pants">
+        <div class="product-thumb" style="background-image: url('./images/yoga-pant.jpg');"></div>
+        <h3 class="product-title">Yoga Pants</h3>
+        <p class="product-price">$35</p>
+      </article>
+
+    </section>
+
+    <p id="noResults" class="no-results" hidden>No matching products found.</p>
+  </main>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-box-1">
+        <h2 class="headingText">Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum
+          used since the 1500s is reprodused
+          below for those interest</p>
+      </div>
+    </div>
+    <p class="subtitle">@ 2023 Nostra.com</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

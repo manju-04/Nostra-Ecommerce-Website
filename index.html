@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostra - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <header class="navigation bar">
+    <div class="nav container">
+      <a href="index.html" class="brand">Nostra</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <h2>Menu</h2>
+      <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">×</button>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="contact.html">Contact</a>
+  </aside>
+  <div class="overlay" id="overlay" tabindex="-1" aria-hidden="true"></div>
+
+  <!-- slider -->
+  <section class="slider" id="slider" aria-label="Featured products">
+    <div class="slides">
+      <div class="slide active" style="background-image: url('images/sale_img.jpg');">
+        <div class="slide-content">
+          <h2>Fresh Arrivals</h2>
+          <p>Discover the latest trends curated for you.</p>
+          <a href="collections.html" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- service -->
+  <section class="service" aria-label="Our services">
+    <div class="container grid-3">
+      <div class="service-card">
+        <h3>Fast Delivery</h3>
+        <p>Get your orders delivered quickly and safely.</p>
+      </div>
+      <div class="service-card">
+        <h3>Secure Payment</h3>
+        <p>Multiple payment options with robust security.</p>
+      </div>
+      <div class="service-card">
+        <h3>Easy Returns</h3>
+        <p>Hassle-free 7-day return policy on eligible items.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- news -->
+  <section class="news" aria-label="Latest news">
+    <div class="container">
+      <h2 class="section-title">Latest News</h2>
+      <div class="news-list">
+        <article class="news-item">
+          <h3>Storewide Sale This Weekend</h3>
+          <p>Save big with exclusive discounts on our top categories.</p>
+        </article>
+        <article class="news-item">
+          <h3>New Summer Collection</h3>
+          <p>Light fabrics and bright styles to beat the heat.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-box-1">
+        <h2 class="headingText">Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum
+          used since the 1500s is reprodused
+          below for those interest</p>
+      </div>
+    </div>
+    <p class="subtitle">@ 2023 Nostra.com</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
